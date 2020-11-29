@@ -15,14 +15,14 @@ blocking:
     default:
       - ads
   blockType: zeroIp
-clientLookup:
-  upstream: udp:10.8.55.1
-  singleNameOrder:
-      - 2
-      - 1
-  clients:
-    nuc:
-      - 10.8.55.40
+# clientLookup:
+#   upstream: udp:10.8.55.1
+#   singleNameOrder:
+#       - 2
+#       - 1
+#   clients:
+#     nuc:
+#       - 10.8.55.40
 queryLog:
     dir: /logs
     perClient: true
