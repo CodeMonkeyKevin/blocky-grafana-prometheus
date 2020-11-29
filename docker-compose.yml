@@ -6,8 +6,8 @@ services:
     container_name: blocky
     restart: always
     ports:
-      - "530:53/tcp"
-      - "530:53/udp"
+      - "53:53/tcp"
+      - "53:53/udp"
       - "4000:4000"
     environment:
       - TZ=US/Eastern
@@ -26,7 +26,7 @@ services:
       - '--web.console.libraries=/usr/share/prometheus/console_libraries'
       - '--web.console.templates=/usr/share/prometheus/consoles'
     ports:
-      - 9091:9090
+      - 9090:9090
     restart: always
   grafana:
     image: grafana/grafana:6.7.1
